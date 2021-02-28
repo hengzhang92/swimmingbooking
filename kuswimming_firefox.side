@@ -1,0 +1,188 @@
+{
+  "id": "60725314-df55-4837-8ef9-af5d36161fb0",
+  "version": "2.0",
+  "name": "kuswimming",
+  "url": "https://dmsonline.extern.kuleuven.be",
+  "tests": [{
+    "id": "61afb53b-8ece-4601-80f9-48cb4557e76b",
+    "name": "swimingtest",
+    "commands": [{
+      "id": "b44fefce-4eea-4c99-8bd7-5a87f4b5deaa",
+      "comment": "",
+      "command": "open",
+      "target": "/nl/members/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "041a4af0-f77a-4b70-a675-2810d2666ef2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ae9d18b-1b7d-4f13-b082-6098fd581442",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='login_view']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf49226f-fcaa-4af2-8baf-a886080c8db3",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='login_view']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "zhangheng19920210@gmail.com"
+    }, {
+      "id": "a84ca568-c39c-4c5e-9b8d-bc7dba94f3bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_view']/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2d95f32-f20a-4164-b3b2-92962cb4a5ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_view']/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "heng"
+    }, {
+      "id": "e5f98f8b-c8f7-4271-97bc-c2d9870884fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='login_view']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,' Inloggen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a9ac084-be80-41ed-b932-488bf9f680ed",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=MyPage",
+      "targets": [
+        ["linkText=MyPage", "linkText"],
+        ["css=.pull-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MyPage')]", "xpath:link"],
+        ["xpath=//div[@id='fullMenu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://dmsonline.extern.kuleuven.be/nl/members/dashboard')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77f07de3-3c27-4b1a-9e77-15bc66809fa9",
+      "comment": "",
+      "command": "click",
+      "target": "id=groupId",
+      "targets": [
+        ["id=groupId", "id"],
+        ["css=#groupId", "css:finder"],
+        ["xpath=//select[@id='groupId']", "xpath:attributes"],
+        ["xpath=//div[@id='booking_view']/div/div/div/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49ec324d-3a5a-4a4f-8b8c-c0a14abf34a2",
+      "comment": "",
+      "command": "select",
+      "target": "id=groupId",
+      "targets": [],
+      "value": "label=Swimming"
+    }, {
+      "id": "0d6e3209-ae37-447f-8ae4-7eedf61f49f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#groupId > option:nth-child(9)",
+      "targets": [
+        ["css=#groupId > option:nth-child(9)", "css:finder"],
+        ["xpath=//option[@value='Swimming']", "xpath:attributes"],
+        ["xpath=//select[@id='groupId']/option[9]", "xpath:idRelative"],
+        ["xpath=//option[9]", "xpath:position"],
+        ["xpath=//option[contains(.,'Swimming')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c43bccde-99e5-42df-b62a-c33c3e1e1e95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fc-event:nth-child(14) .bookSlotsLeft",
+      "targets": [
+        ["css=.fc-event:nth-child(14) .bookSlotsLeft", "css:finder"],
+        ["xpath=//div[@id='calendar']/div/div/div/div/div/div/div[14]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[14]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d986a4a0-5e5a-49a1-ba1b-9bc8927d9f92",
+      "comment": "",
+      "command": "click",
+      "target": "id=addBookingButton",
+      "targets": [
+        ["id=addBookingButton", "id"],
+        ["css=#addBookingButton", "css:finder"],
+        ["xpath=//input[@id='addBookingButton']", "xpath:attributes"],
+        ["xpath=//form[@id='addBooking']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ac0ab1a-68b9-49c7-97f4-0623617214a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-header:nth-child(2) > .close",
+      "targets": [
+        ["css=.modal-header:nth-child(2) > .close", "css:finder"],
+        ["xpath=//form[@id='addBooking']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'x')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ed662dd1-db1c-4181-a89d-24a537be6759",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["61afb53b-8ece-4601-80f9-48cb4557e76b"]
+  }],
+  "urls": ["https://dmsonline.extern.kuleuven.be/"],
+  "plugins": []
+}
