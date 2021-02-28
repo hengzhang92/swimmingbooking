@@ -170,11 +170,14 @@ def main():
 
     try:
         driver.get("https://usc.kuleuven.cloud/nl/members/login")
-        email = driver.find_element_by_name('email')
+        time.sleep(5)
+        driver.find_element_by_xpath("//a[contains(text(),'kuleuven')]").click()
+        time.sleep(5)
+        email = driver.find_element_by_name('username')
         password = driver.find_element_by_name('password')
-        email.send_keys("zhangheng19920210@gmail.com")
-        password.send_keys("heng")
-        driver.find_element_by_id("submit").click()
+        email.send_keys("r0441899")
+        password.send_keys("2059197Hxr")
+        driver.find_element_by_id("pwdLoginBtn").click()
         time.sleep(10)
         go_to_booking()
         time.sleep(10)

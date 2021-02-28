@@ -107,6 +107,8 @@ def book_for_latest():
         delete_not_latest()
         element.click()
 
+
+
 def get_exist_booking():
     driver.get('https://dmsonline.extern.kuleuven.be/nl/bookings/view/current')
     time.sleep(10)
