@@ -2108,3 +2108,64 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1614544187226	Marionette	INFO	Listening on port 40617
 1614544187310	Marionette	WARN	TLS certificate errors will be ignored for this session
 1614544245640	Marionette	INFO	Stopped listening on port 40617
+1614545190867	geckodriver	INFO	Listening on 127.0.0.1:38825
+1614545191803	mozrunner::runner	INFO	Running command: "/usr/bin/firefox-esr" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileL0VJyX"
+*** You are running in headless mode.
+1614545204121	Marionette	INFO	Listening on port 34731
+1614545204210	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614545254227	Marionette	INFO	Stopped listening on port 34731
+1614545387826	geckodriver	INFO	Listening on 127.0.0.1:60043
+1614545388904	mozrunner::runner	INFO	Running command: "/usr/bin/firefox-esr" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileebDuiv"
+*** You are running in headless mode.
+1614545396074	Marionette	INFO	Listening on port 39031
+1614545396146	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614545443845	Marionette	INFO	Stopped listening on port 39031
+1614545702340	geckodriver	INFO	Listening on 127.0.0.1:36533
+1614545702399	mozrunner::runner	INFO	Running command: "/usr/bin/firefox-esr" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4NwtxY"
+*** You are running in headless mode.
+1614545708613	Marionette	INFO	Listening on port 36597
+1614545708661	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614545767346	Marionette	INFO	Stopped listening on port 36597
+1614546242972	geckodriver	INFO	Listening on 127.0.0.1:38649
+1614546242979	geckodriver	INFO	Listening on 127.0.0.1:36151
+1614546243067	mozrunner::runner	INFO	Running command: "/usr/bin/firefox-esr" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4SwrtA"
+1614546243983	mozrunner::runner	INFO	Running command: "/usr/bin/firefox-esr" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebccHQl"
+*** You are running in headless mode.
+*** You are running in headless mode.
+1614546296945	Marionette	INFO	Listening on port 39251
+1614546296946	Marionette	INFO	Listening on port 42315
+1614546298097	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614546298156	Marionette	WARN	TLS certificate errors will be ignored for this session
+Hit MOZ_CRASH([unhandlable oom] Failed not allocate new chunk during GC) at /build/firefox-esr-2KwbZd/firefox-esr-78.8.0esr/js/src/vm/JSContext.cpp:1202
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+JavaScript error: https://usc.kuleuven.cloud/resources/js/libs/jcookie/jquery.cookie.js, line 17: ReferenceError: jQuery is not defined
+1614546371075	geckodriver	INFO	Listening on 127.0.0.1:40667
+1614546371075	geckodriver	INFO	Listening on 127.0.0.1:58739
+1614546371236	mozrunner::runner	INFO	Running command: "/usr/bin/firefox-esr" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUxADmh"
+1614546371238	mozrunner::runner	INFO	Running command: "/usr/bin/firefox-esr" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQtwjUk"
+*** You are running in headless mode.
+*** You are running in headless mode.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: https://usc.kuleuven.cloud/resources/js/libs/bootstrap-datepicker.js, line 998: TypeError: $ is undefined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/libs/bootstrap-confirm.js, line 222: ReferenceError: jQuery is not defined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/libs/bootstrap-timepicker.js, line 1177: ReferenceError: jQuery is not defined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/libs/jQuery.equalHeights.js, line 20: ReferenceError: $ is not defined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/libs/fullcalendar/fullcalendar.js, line 5472: ReferenceError: jQuery is not defined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/libs/jquery.dateFormat-1.0.js, line 296: ReferenceError: jQuery is not defined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/libs/bootstrap-colorpicker.js, line 391: TypeError: $ is undefined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/script.js, line 1: ReferenceError: $ is not defined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/select2.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/cmpt/vendor/foundation.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: https://usc.kuleuven.cloud/resources/js/cmpt/app.js, line 1: ReferenceError: $ is not defined
+JavaScript error: https://unpkg.com/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js, line 7: ReferenceError: jQuery is not defined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/jquery.dataTables.min.js, line 5: ReferenceError: jQuery is not defined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js, line 557: TypeError: $ is undefined
+JavaScript error: https://usc.kuleuven.cloud/nl/members/login, line 115: ReferenceError: $ is not defined
+1614546410778	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1614546435667	Marionette	INFO	Stopped listening on port 42315

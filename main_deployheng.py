@@ -180,6 +180,7 @@ def main():
         time.sleep(10)
         go_to_booking()
         time.sleep(10)
+       # driver.save_screenshot('screenie.png')
         book_for_latest()
         driver.close()
     except:
