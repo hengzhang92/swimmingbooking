@@ -104,7 +104,10 @@ def book_for_latest():
     element=elements[-1].find_element_by_xpath(".//button[@class='button v-btn theme--light primary']")
     time.sleep(5)
     if element.text == 'ADD':
-        delete_not_latest()
+        try:
+            delete_not_latest()
+        except:
+            pass
         element.click()
 
 
