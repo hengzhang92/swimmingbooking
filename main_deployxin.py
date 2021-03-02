@@ -189,6 +189,7 @@ def main():
             pass
         go_to_booking()
         time.sleep(10)
+        print('went to booking page')
        # driver.save_screenshot('screenie.png')
         book_for_latest()
         driver.close()
