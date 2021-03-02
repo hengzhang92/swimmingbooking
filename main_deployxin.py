@@ -182,6 +182,11 @@ def main():
         password.send_keys("2059197Hxr")
         driver.find_element_by_id("pwdLoginBtn").click()
         time.sleep(10)
+        try:
+            driver.find_element_by_xpath("//input[@class='btn btn-lg btn-success']").click()
+            time.sleep(5)
+        except:
+            pass
         go_to_booking()
         time.sleep(10)
        # driver.save_screenshot('screenie.png')
