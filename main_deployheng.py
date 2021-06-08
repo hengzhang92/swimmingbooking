@@ -6,6 +6,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time,sys,getopt
 import bisect
 from datetime import datetime,timedelta
+import argparse
 #driver = webdriver.Firefox()
 
 options = Options()
@@ -116,6 +117,40 @@ def book_for_latest():
         time.sleep(5)
         element.click()
 
+def delete_slot(slotnumber):
+    elements = driver.find_elements_by_xpath(
+        "//div[@class='v-card v-sheet theme--light' and @style = 'margin-bottom: 5px;']")
+    if slotnumber == -1:
+        slot_tb_deleted = elements[0:-1]
+    else:
+        slot_tb_deleted = elements[:slotnumber] + elements[slotnumber+1:]
+    for element in slot_tb_deleted:
+        try:
+            time.sleep(5)
+            element.find_element_by_xpath(".//button[@class='button v-btn theme--light red']").click()
+        except Exception as e:
+            print(e)
+            pass
+def book_for_slot(slotnumber):
+    #defines the position of the slot to be reserved,-1 =last slot,0 = first slot
+    elements = driver.find_elements_by_xpath(
+        "//div[@class='v-card v-sheet theme--light' and @style = 'margin-bottom: 5px;']")
+    time.sleep(5)
+    element = elements[slotnumber].find_element_by_xpath(".//button[@class='button v-btn theme--light primary']")
+    time.sleep(5)
+    if element.text == 'ADD':
+        try:
+            delete_slot(slotnumber)
+            time.sleep(5)
+        except:
+            pass
+        elements = driver.find_elements_by_xpath(
+            "//div[@class='v-card v-sheet theme--light' and @style = 'margin-bottom: 5px;']")
+        time.sleep(5)
+        element = elements[slotnumber].find_element_by_xpath(".//button[@class='button v-btn theme--light primary']")
+        time.sleep(5)
+        element.click()
+
 
 
 def get_exist_booking():
@@ -180,6 +215,12 @@ def book_date(definedtime):
 def main():
 
     try:
+        parser = argparse.ArgumentParser(description='A test program.')
+        parser.add_argument("-S", "--SlotNumber",
+                            help="defines the position of the slot to be reserved,-1 =last slot,0 = first slot",
+                            type=int)
+        args = parser.parse_args()
+        slotnumber = args.SlotNumber
         driver.get("https://usc.kuleuven.cloud/nl/members/login")
         email = driver.find_element_by_name('email')
         password = driver.find_element_by_name('password')
@@ -190,7 +231,9 @@ def main():
         go_to_booking()
         time.sleep(10)
        # driver.save_screenshot('screenie.png')
-        book_for_latest()
+       # book_for_latest()
+        book_for_slot(slotnumber)
+
         driver.close()
     except:
         driver.close()
